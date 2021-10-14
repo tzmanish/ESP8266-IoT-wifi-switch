@@ -1,0 +1,48 @@
+:Author: tzman
+:Email: tzmanish97@gmail.com
+:Date: 26/09/2021
+:Revision: 0.1
+:License: Public Domain
+
+= Project: ESP8266 IoT - WiFi switch
+
+== Installation
+
+=== Step 1: Upload
+
+For example:
+
+1. Change SSID and Password
+2. Upload to your MCU using Arduino IDE or CLI
+
+=== Step 2: Assemble
+
+Assemble the circuit following the diagram diagram.png attached to the sketch
+
+=== Step 3: Add devices
+
+1. Connect to the wifi using credentials configured in Step 1
+2. open <ipaddr>:80/devices in your browser (use ip address assigned to MCU)
+3. Add your devices. Available pins are : 0,2,4,5,12,13,14,15,16
+4. The devices can be toggled using gui interface at <ipaddr>:80
+
+== Folder structure
+
+....
+ ESP8266-IoT-wifi-switch  => Arduino sketch folder
+  ├── ESP8266-IoT.ino     => main Arduino file
+  ├── diagram.png         => an image of the layout
+  └── ReadMe.adoc         => this file
+....
+
+|===
+| ID    | Part name      | Part number | Quantity
+| NM    | Node MCU       | ESP8266     | 1
+| R1-R9 | Relay Modules  | -           | number of devices
+|===
+
+
+== Help
+This document is written in the _AsciiDoc_ format, a markup language to describe documents.
+If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
