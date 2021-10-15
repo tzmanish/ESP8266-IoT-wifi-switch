@@ -5,6 +5,7 @@
 :License: Public Domain
 
 = Project: ESP8266 IoT - WiFi switch
+
 Control up-to 10 devices from your local network. Devices can also be scheduled to turn on/off at a perticular date-time.
 
 == Installation
